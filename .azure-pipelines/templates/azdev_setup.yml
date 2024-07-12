@@ -18,6 +18,7 @@ steps:
       python -m pip install -U pip
       pip install azdev
       azdev --version
+      pip install -U pylint
 
       if [ -z "$CLI_EXT_REPO_PATH" ]; then
         azdev setup -c $CLI_REPO_PATH --debug
